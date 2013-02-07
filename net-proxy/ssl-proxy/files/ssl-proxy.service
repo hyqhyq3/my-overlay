@@ -1,0 +1,9 @@
+[Unit]
+Description=Fuck gfw on squid with ssl
+
+[Service]
+ExecStart=/usr/bin/socat tcp-listen:3128,fork,reuseaddr openssl:fysj.com:5678,verify=0
+Restart=always
+
+[Install]
+WantedBy=sockets.target
