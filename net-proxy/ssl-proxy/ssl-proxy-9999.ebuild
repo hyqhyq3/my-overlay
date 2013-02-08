@@ -21,4 +21,6 @@ sys-apps/systemd"
 
 src_install() {
     systemd_dounit "${FILESDIR}/ssl-proxy.service"
+    systemd_dounit "${FILESDIR}/ssl-proxy@.service"
+    systemd_dounit "${FILESDIR}/ssl-proxy.socket"
 }
