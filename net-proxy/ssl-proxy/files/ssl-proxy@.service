@@ -1,0 +1,7 @@
+[Unit]
+Description=Fuck gfw on squid with ssl
+
+[Service]
+ExecStart=-/usr/bin/socat - openssl:fysj.com:5678,verify=0
+
+

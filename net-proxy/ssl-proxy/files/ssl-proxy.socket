@@ -1,0 +1,8 @@
+[Unit]
+Description=Fuck gfw on squid with ssl
+Conflicts=ssl-proxy.service
+
+[Socket]
+ListenStream=8080
+Accept=yes
+
